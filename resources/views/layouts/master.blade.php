@@ -9,19 +9,19 @@
     <meta name="author" content="PIXINVENT">
     <title>Project Lodge</title>
      <!-- BEGIN VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="/app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/app-assets/css/bootstrap.css')}}">
     <!-- font icons-->
-    <link rel="stylesheet" type="text/css" href="/app-assets/fonts/icomoon.css">
-    <link rel="stylesheet" type="text/css" href="/app-assets/fonts/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/extensions/pace.css">
-    <link rel="stylesheet" type="text/css" href="/app-assets/css/bootstrap-extended.css">
-    <link rel="stylesheet" type="text/css" href="/app-assets/css/app.css">
-    <link rel="stylesheet" type="text/css" href="/app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/app-assets/fonts/icomoon.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/app-assets/fonts/flag-icon-css/css/flag-icon.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/app-assets/vendors/css/extensions/pace.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/app-assets/css/bootstrap-extended.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/app-assets/css/app.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/app-assets/css/colors.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/fa/css/font-awesome.css')}}">
-    <link rel="stylesheet" type="text/css" href="/app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="/app-assets/css/core/menu/menu-types/vertical-overlay-menu.css">
-    <link rel="stylesheet" type="text/css" href="/app-assets/css/core/colors/palette-gradient.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('/app-assets/css/core/menu/menu-types/vertical-menu.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/app-assets/css/core/menu/menu-types/vertical-overlay-menu.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/app-assets/css/core/colors/palette-gradient.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/style.css')}}">
 
 
   </head>
@@ -47,7 +47,7 @@
             <ul class="nav navbar-nav float-xs-right">
           
               @if(Auth::check())
-              <li class="dropdown dropdown-user nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link"><span class="avatar avatar-online"><img src="../../app-assets/images/portrait/small/avatar-s-1.png" alt="avatar"><i></i></span><span class="user-name">{{Auth::user()->name}}</span></a>
+              <li class="dropdown dropdown-user nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link"><span class="avatar avatar-online"><img src="{{asset('/app-assets/images/portrait/small/avatar-s-1.png')}}" alt="avatar"><i></i></span><span class="user-name">{{Auth::user()->name}}</span></a>
                 <div class="dropdown-menu dropdown-menu-right">
                 <a href="#" class="dropdown-item"><i class="icon-head"></i> Edit Profile</a>
                 @endif
@@ -129,24 +129,17 @@
 
   
  <!-- BEGIN VENDOR JS-->
-    <script src="../../app-assets/js/core/libraries/jquery.min.js" type="text/javascript"></script>
-    <script src="../../app-assets/vendors/js/ui/tether.min.js" type="text/javascript"></script>
-    <script src="../../app-assets/js/core/libraries/bootstrap.min.js" type="text/javascript"></script>
-    <script src="../../app-assets/vendors/js/ui/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
-    <script src="../../app-assets/vendors/js/ui/unison.min.js" type="text/javascript"></script>
-    <script src="../../app-assets/vendors/js/ui/blockUI.min.js" type="text/javascript"></script>
-    <script src="../../app-assets/vendors/js/ui/jquery.matchHeight-min.js" type="text/javascript"></script>
-    <script src="../../app-assets/vendors/js/ui/screenfull.min.js" type="text/javascript"></script>
-    <script src="../../app-assets/vendors/js/extensions/pace.min.js" type="text/javascript"></script>
+    <script src="{{asset('/app-assets/js/core/libraries/jquery.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('/app-assets/vendors/js/ui/tether.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('/app-assets/js/core/libraries/bootstrap.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('/app-assets/vendors/js/ui/perfect-scrollbar.jquery.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('/app-assets/vendors/js/ui/unison.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('/app-assets/vendors/js/ui/blockUI.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('/app-assets/vendors/js/ui/jquery.matchHeight-min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('/app-assets/vendors/js/ui/screenfull.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('/app-assets/vendors/js/extensions/pace.min.js')}}" type="text/javascript"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="../../app-assets/vendors/js/charts/chart.min.js" type="text/javascript"></script>
-    <!-- END PAGE VENDOR JS-->
-    <!-- BEGIN ROBUST JS-->
-    <script src="../../app-assets/js/core/app-menu.js" type="text/javascript"></script>
-    <script src="../../app-assets/js/core/app.js" type="text/javascript"></script>
-    <!-- END ROBUST JS-->
-    <!-- BEGIN PAGE LEVEL JS-->
-    <script src="../../app-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script>
+    <script src="{{asset('/app-assets/vendors/js/charts/chart.min.js')}}'" type="text/javascript"></script>
   </body>
 </html>

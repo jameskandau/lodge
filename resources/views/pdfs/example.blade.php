@@ -37,12 +37,14 @@
 
 	<div class="row">
 		<div class="col-sm-10 col-sm-offset-2">
+
 			<table class="table table-striped">
 				<thead>
 					<tr>
 						<th>Check In Date</th>
 						<th>Check Out Date</th>
 						<th>Room Number</th>
+						<th>Description</th>
 						<th>Price</th>
 						
 					</tr>
@@ -52,10 +54,18 @@
 					<td>{{$payment->booking->check_in}}</td>
 					<td>{{$payment->booking->check_out}}</td>
 					<td>{{$payment->booking->room_number}}</td>
+					<td>Other Expenses</td>
 					<td>{{$payment->amount}}</td>
 				</tr>
 				<tr>
-				<td colspan="4" style="text-align:right;"><b>Totals: {{$payment->amount}}</b></td>
+					<td>{{$payment->booking->check_in}}</td>
+					<td>{{$payment->booking->check_out}}</td>
+					<td>{{$payment->booking->room_number}}</td>
+					<td>Accomodation Expenses</td>
+					<td>{{$payment->totals}}</td>
+				</tr>
+				<tr>
+				<td colspan="5" style="text-align:right;"><b>Totals: {{$payment->fullcharges}}</b></td>
 				</tr>
 				</tbody>
 			</table>
