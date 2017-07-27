@@ -17,6 +17,7 @@ class PrintController extends Controller
 
     	
     	$payment = Payment::findOrFail($id);
+      
        $html = view('pdfs.example',compact('payment'))->render();
 
         return $this->pdf

@@ -18,6 +18,8 @@ class CreatePaymentsTable extends Migration
             $table->integer('customer_id')->unsigned();
             $table->string('till_no');
             $table->float('amount');
+            $table->float('totals');
+             $table->float('fullcharges');
             $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');
             $table->timestamps();
         });

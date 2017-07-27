@@ -24,6 +24,8 @@
 							@endforeach()
 	                      <small class="form-control-feedback">{{$errors->first('customer')}}</small>
 						</div>
+						<input type="hidden" name="total" value="{{$totals}}">
+					
 						<div class="form-group {{$errors->has('name')?'has-danger':''}}">
 							{{Form::label('label','Amount')}}
 						    {{Form::number('amount',null,['class'=>'form-control'])}}
